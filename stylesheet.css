@@ -1,0 +1,63 @@
+/* line 1, /Users/jortbroekhof/Documents/bewijzenmap/jaar 2/p1.1/css/css animation/sass/stylesheet.scss */
+body {
+  min-height: 0;
+  min-width: 0;
+  display: grid;
+  grid-template-columns: auto auto 1fr;
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden;
+  padding: 0;
+  margin: 0;
+}
+
+/* line 12, /Users/jortbroekhof/Documents/bewijzenmap/jaar 2/p1.1/css/css animation/sass/stylesheet.scss */
+p {
+  color: white;
+  padding-left: 1em;
+}
+
+/* line 16, /Users/jortbroekhof/Documents/bewijzenmap/jaar 2/p1.1/css/css animation/sass/stylesheet.scss */
+#button {
+  grid-column: 1;
+  margin-bottom: 2em;
+  margin-top: 5em;
+  margin-left: 2em;
+}
+
+/* line 23, /Users/jortbroekhof/Documents/bewijzenmap/jaar 2/p1.1/css/css animation/sass/stylesheet.scss */
+.div {
+  grid-column: 1/2;
+  width: 20em;
+  height: 4em;
+  left: -20em;
+  position: absolute;
+  transition: transform 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+/* line 31, /Users/jortbroekhof/Documents/bewijzenmap/jaar 2/p1.1/css/css animation/sass/stylesheet.scss */
+.div--slide {
+  transform: translateX(20em);
+}
+
+/* line 36, /Users/jortbroekhof/Documents/bewijzenmap/jaar 2/p1.1/css/css animation/sass/stylesheet.scss */
+.div__1 {
+  background-color: #404040;
+  top: 10em;
+}
+
+/* line 40, /Users/jortbroekhof/Documents/bewijzenmap/jaar 2/p1.1/css/css animation/sass/stylesheet.scss */
+.div__2 {
+  background-color: #404040;
+  top: 15em;
+  transition-delay: 0.2s;
+}
+
+/* line 45, /Users/jortbroekhof/Documents/bewijzenmap/jaar 2/p1.1/css/css animation/sass/stylesheet.scss */
+.div__3 {
+  background-color: #404040;
+  top: 20em;
+  transition-delay: 0.8s;
+}
+
+/*# sourceMappingURL=../css/stylesheet.map */

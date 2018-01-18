@@ -1,0 +1,50 @@
+body {
+  min-height: 0;
+  min-width: 0;
+  display: grid;
+  grid-template-columns: auto auto 1fr;
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden;
+  padding: 0;
+  margin: 0;
+}
+p {
+  color: white;
+  padding-left: 1em;
+}
+#button {
+  grid-column: 1;
+  margin-bottom: 2em;
+  margin-top: 5em;
+  margin-left: 2em;
+}
+
+.div {
+  grid-column: 1/2;
+  width: 20em;
+  height: 4em;
+  left: -20em;
+  position: absolute;
+  transition: transform 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+  &--slide {
+    transform: translateX(20em);
+
+  }
+
+  &__1 {
+    background-color: #404040;
+    top: 10em;
+  }
+  &__2 {
+    background-color: #404040;
+    top: 15em;
+    transition-delay: 0.2s
+  }
+  &__3 {
+    background-color: #404040;
+    top: 20em;
+    transition-delay: 0.8s
+  }
+}
